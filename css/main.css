@@ -13,7 +13,7 @@
     align-items: center;
     color: #FFFFFF; }
   .header__nav a:hover {
-    text-decoration: underline #1959e3; }
+    text-decoration: underline overline #1959e3; }
   .header__nav-link:not(:last-child) {
     margin-right: 32px; }
 
@@ -45,6 +45,8 @@
   display: flex; }
   .camera__intro:not(:last-child) {
     margin-right: 16px; }
+  .camera__intro img {
+    margin-right: 6px; }
 .camera__text {
   font-size: 12px;
   line-height: 12px;
@@ -109,12 +111,15 @@
   .work__cards {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 576px);
-    grid-template-rows: repeat(2, 600px);
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
     grid-gap: 16px;
     grid-template-areas: "card1 card2" "card3 card4"; }
   .work__card {
-    position: relative; }
+    position: relative;
+    transition: 0.3s ease-in; }
+    .work__card:hover {
+      transform: scale(1.02); }
   .work__card-title {
     text-transform: uppercase;
     color: #FFFFFF;
@@ -138,6 +143,9 @@
       padding: 10px 10px 13px 42px;
       background: #FFFFFF;
       border-radius: 14px; }
+      .work__card-button a:hover {
+        background: #1959e3;
+        color: #FFFFFF; }
     .work__card-button:before {
       content: "";
       position: absolute;
@@ -155,5 +163,55 @@
     grid-template-rows: repeat(4, 600px);
     grid-gap: 16px;
     grid-template-areas: "card1" "card2" "card3" "card4"; } }
+@media (max-width: 640px) {
+  .work {
+    padding: 80px 0 80px 0; }
+    .work__title {
+      font-size: 30px;
+      line-height: 32px; }
+    .work__cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .work__subtitle {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 20px; }
+    .work__card-title {
+      margin: 0;
+      bottom: 134px;
+      left: 10px; }
+    .work__card-subtitle {
+      width: 250px;
+      bottom: 84px;
+      left: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .work__card-button {
+      bottom: 60px;
+      left: 10px; } }
+.picture {
+  height: 600px;
+  background: url(../../img/picture/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .picture__info {
+    position: relative; }
+  .picture__intro {
+    position: absolute;
+    right: 62px;
+    margin-top: 260px; }
+  .picture__intro-title {
+    color: #FFFFFF;
+    text-transform: uppercase; }
+  .picture__intro-subtitle {
+    width: 298px; }
+  .picture__camera-info {
+    position: absolute;
+    z-index: 100;
+    right: -80px;
+    bottom: -545px; }
 
 /*# sourceMappingURL=main.css.map */

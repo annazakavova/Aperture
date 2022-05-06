@@ -1,0 +1,38 @@
+.picture {
+
+	height: 600px;
+
+	background: url(../../img/picture/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__info {
+		position: relative;
+	}
+	&__intro {
+		position: absolute;
+		right: 62px;
+
+		margin-top: 260px;
+		
+	}
+
+	&__intro-title {
+		color: #FFFFFF;
+
+		text-transform: uppercase;
+
+	}
+
+	&__intro-subtitle {
+		width: 298px;
+	}
+
+	&__camera-info {
+		position: absolute;
+		z-index: 100;
+
+		right: -80px;
+		bottom: -545px;
+	}
+}

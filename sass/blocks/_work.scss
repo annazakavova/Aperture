@@ -25,8 +25,8 @@
 	&__cards {
 		display: grid;
 		justify-content: center;
-		grid-template-columns: repeat(2, 576px);
-		grid-template-rows: repeat(2, 600px);
+		grid-template-columns: repeat(2);
+		grid-template-rows: repeat(2);
 		grid-gap: 16px;
 		grid-template-areas: 
 		"card1 card2"
@@ -35,9 +35,12 @@
 
 	&__card {
 		position: relative;
+		transition: 0.3s ease-in;
+		
+			&:hover {
+				transform: scale(1.02);
+			}
 	}
-
-	&__card-picture {}
 
 	&__card-title {
 		text-transform: uppercase;
@@ -76,6 +79,11 @@
 			
 			background: #FFFFFF;
 			border-radius: 14px;
+
+			&:hover {
+				background: #1959e3;
+				color: #FFFFFF;
+			}
 		}
 
 		&:before {
@@ -104,6 +112,54 @@
 				"card2"
 				"card3"
 				"card4";
+		}
+	}
+}
+@media (max-width: 640px) {
+	.work {
+	
+		padding: 80px 0 80px 0;
+	
+		&__title {
+			font-size: 30px;
+			line-height: 32px;
+	
+		}
+
+		&__cards {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__subtitle {
+			font-size: 18px;
+			line-height: 20px;
+	
+			margin-bottom: 20px;
+		}
+	
+		&__card-title {
+			margin: 0;
+			bottom: 134px;
+			left: 10px;
+		}
+	
+		&__card-subtitle {
+	
+			width: 250px;
+			bottom: 84px;
+			left: 10px;
+	
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		&__card-button {
+		
+			bottom: 60px;
+			left: 10px;
 		}
 	}
 }
