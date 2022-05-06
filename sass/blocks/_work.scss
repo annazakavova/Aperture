@@ -1,0 +1,109 @@
+.work {
+
+	padding: 120px 0 100px 0;
+
+	&__title {
+		font-size: 40px;
+		line-height: 42px;
+
+		color: #FFFFFF;
+
+		margin-bottom: 15px;
+
+		text-align: center;
+	}
+
+	&__subtitle {
+		font-size: 23px;
+		line-height: 30px;
+
+		margin-bottom: 42px;
+
+		text-align: center;
+	}
+
+	&__cards {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: repeat(2, 576px);
+		grid-template-rows: repeat(2, 600px);
+		grid-gap: 16px;
+		grid-template-areas: 
+		"card1 card2"
+		"card3 card4";
+	}
+
+	&__card {
+		position: relative;
+	}
+
+	&__card-picture {}
+
+	&__card-title {
+		text-transform: uppercase;
+
+		color: #FFFFFF;
+
+		margin-bottom: 20px;
+
+		position: absolute;
+		bottom: 164px;
+		left: 30px;
+	}
+
+	&__card-subtitle {
+
+		width: 520px;
+
+		margin-bottom: 20px;
+
+		position: absolute;
+		bottom: 94px;
+		left: 30px;
+	}
+
+	&__card-button {
+		font-size: 15px;
+
+		color: #000000;
+
+		position: relative;
+		bottom: 60px;
+		left: 30px;
+
+		a {
+			padding: 10px 10px 13px 42px;
+			
+			background: #FFFFFF;
+			border-radius: 14px;
+		}
+
+		&:before {
+			content: "";
+
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			background: url(../../img/work/button.svg) no-repeat;
+
+			left: 4px;
+			top: -5px;
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.work {
+		&__cards {
+			display: grid;
+			justify-content: center;
+			grid-template-columns: repeat(1, 576px);
+			grid-template-rows: repeat(4, 600px);
+			grid-gap: 16px;
+			grid-template-areas:
+				"card1"
+				"card2"
+				"card3"
+				"card4";
+		}
+	}
+}

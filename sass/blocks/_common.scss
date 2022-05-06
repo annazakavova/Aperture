@@ -1,0 +1,40 @@
+// CAMERA-INFO
+.camera {
+
+	&__info {
+		display: flex;
+
+		position: absolute;
+		right: 80px;
+		bottom: 40px;
+
+	}
+
+	&__intro {
+		display: flex;
+
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
+	}
+
+	&__text {
+		font-size: 12px;
+		line-height: 12px;
+
+		color: #FFFFFF;
+
+		&:not(:last-child) {
+			margin-left: 6px;
+		}
+	}
+}
+@media (max-width: 400px) {
+	.camera {
+	
+		&__info {
+			right: 40px;
+			
+		}
+	}
+}
