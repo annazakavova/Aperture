@@ -11,7 +11,7 @@
 	}
 	&__intro {
 		position: absolute;
-		right: 62px;
+		right: -80px;
 
 		margin-top: 260px;
 		
@@ -30,9 +30,35 @@
 
 	&__camera-info {
 		position: absolute;
-		z-index: 100;
 
 		right: -80px;
 		bottom: -545px;
+	}
+}
+
+@media (max-width:1390px) {
+	.picture {
+	&__intro {
+		right: 80px;	
+	}
+	&__camera-info {
+		right: 80px;
+	}
+}
+}
+@media (max-width:480px) {
+	.picture {
+
+		&__intro {
+			right: 0px;
+
+			text-align: right;
+		}
+		&__intro-subtitle {
+			width: 270px;
+		}
+		&__camera-info {
+			right: 0px;
+		}
 	}
 }

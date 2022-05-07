@@ -57,6 +57,26 @@
 @media (max-width: 400px) {
   .camera__info {
     right: 40px; } }
+.card-button {
+  font-size: 15px;
+  color: #000000;
+  position: relative; }
+  .card-button a {
+    padding: 10px 10px 13px 42px;
+    background: #FFFFFF;
+    border-radius: 14px; }
+    .card-button a:hover {
+      background: #1959e3;
+      color: #FFFFFF; }
+  .card-button:before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url(../../img/work/button.svg) no-repeat;
+    left: 4px;
+    top: -5px; }
+
 .intro {
   background: url(../../img/intro/background.jpg), linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%);
   background-repeat: no-repeat;
@@ -134,26 +154,9 @@
     bottom: 94px;
     left: 30px; }
   .work__card-button {
-    font-size: 15px;
-    color: #000000;
-    position: relative;
+    position: absolute;
     bottom: 60px;
     left: 30px; }
-    .work__card-button a {
-      padding: 10px 10px 13px 42px;
-      background: #FFFFFF;
-      border-radius: 14px; }
-      .work__card-button a:hover {
-        background: #1959e3;
-        color: #FFFFFF; }
-    .work__card-button:before {
-      content: "";
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      background: url(../../img/work/button.svg) no-repeat;
-      left: 4px;
-      top: -5px; }
 
 @media (max-width: 1200px) {
   .work__cards {
@@ -201,7 +204,7 @@
     position: relative; }
   .picture__intro {
     position: absolute;
-    right: 62px;
+    right: -80px;
     margin-top: 260px; }
   .picture__intro-title {
     color: #FFFFFF;
@@ -210,8 +213,63 @@
     width: 298px; }
   .picture__camera-info {
     position: absolute;
-    z-index: 100;
     right: -80px;
     bottom: -545px; }
+
+@media (max-width: 1390px) {
+  .picture__intro {
+    right: 80px; }
+  .picture__camera-info {
+    right: 80px; } }
+@media (max-width: 480px) {
+  .picture__intro {
+    right: 0px;
+    text-align: right; }
+  .picture__intro-subtitle {
+    width: 270px; }
+  .picture__camera-info {
+    right: 0px; } }
+.tools {
+  margin-top: 117px; }
+  .tools__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .tools__info {
+    position: relative;
+    width: 600px;
+    padding: 60px 40px 46px 40px; }
+  .tools__info-text {
+    text-transform: uppercase;
+    margin-bottom: 6px; }
+  .tools__info-title {
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 20px; }
+  .tools__info-subtitle {
+    color: #FFFFFF;
+    margin-bottom: 20px; }
+  .tools__picture {
+    background: url(../../img/tools/IMAGE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 720px;
+    height: 540px;
+    position: absolute;
+    right: -120px; }
+
+@media (max-width: 1460px) {
+  .tools__picture {
+    position: relative;
+    left: 0px; }
+  .tools__intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .tools__camera-info {
+    position: absolute;
+    right: 40px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -64,39 +64,13 @@
 		bottom: 94px;
 		left: 30px;
 	}
-
 	&__card-button {
-		font-size: 15px;
-
-		color: #000000;
-
-		position: relative;
+		position: absolute;
 		bottom: 60px;
 		left: 30px;
-
-		a {
-			padding: 10px 10px 13px 42px;
-			
-			background: #FFFFFF;
-			border-radius: 14px;
-
-			&:hover {
-				background: #1959e3;
-				color: #FFFFFF;
-			}
-		}
-
-		&:before {
-			content: "";
-
-			position: absolute;
-			width: 32px;
-			height: 32px;
-			background: url(../../img/work/button.svg) no-repeat;
-
-			left: 4px;
-			top: -5px;
-		}
+	}
+	&__card-picture {
+		
 	}
 }
 @media (max-width: 1200px) {

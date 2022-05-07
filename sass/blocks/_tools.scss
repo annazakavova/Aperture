@@ -1,0 +1,77 @@
+.tools {
+	margin-top: 117px;
+
+	&__intro {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__info {
+		position: relative;
+
+		width: 600px;
+		padding: 60px 40px 46px 40px;
+	}
+
+	&__info-text {
+		text-transform: uppercase;
+
+		margin-bottom: 6px;
+	}
+
+	&__info-title {
+		font-size: 28px;
+		line-height: 32px;
+
+		color: #FFFFFF;
+
+		margin-bottom: 20px;
+	}
+
+	&__info-subtitle {
+		color: #FFFFFF;
+
+		margin-bottom: 20px;
+	}
+	&__card-button {
+		
+	}
+
+	&__picture {
+		background: url(../../img/tools/IMAGE.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		width: 720px;
+		height: 540px;
+
+		position: absolute;
+		right: -120px;
+	}
+
+	&__camera-info {
+		
+	}
+}
+@media (max-width:1460px) {
+	.tools {
+		&__picture {
+			position: relative;
+			left: 0px;
+		}
+		&__intro {
+			flex-direction: column;
+
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+
+		}
+		&__camera-info {
+			position: absolute;
+
+			right: 40px;
+		}
+	}
+}
