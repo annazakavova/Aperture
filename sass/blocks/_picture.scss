@@ -2,10 +2,6 @@
 
 	height: 600px;
 
-	background: url(../../img/picture/1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-
 	&__info {
 		position: relative;
 	}
@@ -35,7 +31,21 @@
 		bottom: -545px;
 	}
 }
-
+.picture1 {
+	background: url(../../img/picture/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.picture2 {
+	background: url(../../img/picture/2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.picture3 {
+	background: url(../../img/picture/3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 @media (max-width:1390px) {
 	.picture {
 	&__intro {

@@ -1,6 +1,8 @@
 .tools {
 	margin-top: 117px;
 
+	min-height: 422px;
+
 	&__intro {
 		display: flex;
 		justify-content: space-between;
@@ -34,9 +36,6 @@
 
 		margin-bottom: 20px;
 	}
-	&__card-button {
-		
-	}
 
 	&__picture {
 		background: url(../../img/tools/IMAGE.jpg);
@@ -49,16 +48,14 @@
 		position: absolute;
 		right: -120px;
 	}
-
-	&__camera-info {
-		
-	}
 }
 @media (max-width:1460px) {
 	.tools {
 		&__picture {
 			position: relative;
 			left: 0px;
+
+			margin-bottom: 50px;
 		}
 		&__intro {
 			flex-direction: column;
@@ -73,5 +70,26 @@
 
 			right: 40px;
 		}
+	}
+}
+@media (max-width:750px) {
+	.tools {
+		margin-top: 50px;
+
+		&__info {
+			width: 320px;
+			padding: 0 0 40px 0;
+	}
+		&__info-title {
+
+		font-size: 20px;
+		line-height: 22px;
+	}
+
+		&__picture {
+
+			width: 320px;
+			height: 250px;
+	}
 	}
 }
