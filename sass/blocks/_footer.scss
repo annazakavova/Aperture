@@ -1,0 +1,107 @@
+.footer {
+	padding: 100px 0 100px 0;
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+
+		border-bottom: 2px solid #FFFFFF;
+	}
+
+	&__nav-name {
+	}
+
+	&__nav-logo {
+		margin-bottom: 20px;
+	}
+
+	&__nav-menu {
+		font-size: 13px;
+	}
+
+	&__nav-link {
+		display: flex;
+		justify-content: space-between;
+
+		margin-bottom: 36px;
+	}
+
+	&__nav-link-text {
+		width: 220.8px;
+		li {
+			font-size: 13px;
+
+			color: #FFFFFF;
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
+	}
+
+	&__nav-link-title {
+		text-transform: uppercase;
+
+		margin-bottom: 10px;
+	}
+
+	&__feedback {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 36px 0 36px 0;
+
+		border-bottom: 2px solid #FFFFFF;
+	}
+
+	&__feedback-subscribe {
+		
+	}
+
+	&__feedback-subscribe-title {
+		text-transform: uppercase;
+
+		color: #FFFFFF;
+		
+		margin-bottom: 20px;
+	}
+
+	&__feedback-subscribe-subtitle {
+		font-size: 13px;
+	}
+	&__connection {
+		padding-top: 56px;
+	}
+	&__feedback-form {
+	}
+
+	&__card-button {}
+
+	&__feedback-form-button {}
+
+	&__connection {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__connection-copy {}
+
+	&__connection-social {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__connection-social-icon {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__connection-social-twitter {}
+}
