@@ -1,7 +1,7 @@
 .tools {
-	margin-top: 117px;
+	margin-top: 133px;
 
-	min-height: 422px;
+	min-height: 407px;
 
 	&__intro {
 		display: flex;
@@ -13,7 +13,7 @@
 		position: relative;
 
 		width: 600px;
-		padding: 60px 40px 46px 40px;
+		padding: 40px 40px 46px 40px;
 	}
 
 	&__info-text {
@@ -34,7 +34,7 @@
 	&__info-subtitle {
 		color: #FFFFFF;
 
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 
 	&__picture {
@@ -47,6 +47,39 @@
 
 		position: absolute;
 		right: -120px;
+	}
+	&__card-button {
+		font-size: 15px;
+	
+		color: #000000;
+
+		position: absolute;
+	
+		a {
+			padding: 10px 10px 13px 42px;
+	
+			background: #FFFFFF;
+			border-radius: 14px;
+
+			transition: 0.3s ease-in;
+	
+			&:hover {
+				background: #1959e3;
+				color: #FFFFFF;
+			}
+		}
+	
+		&:before {
+			content: "";
+	
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			background: url(../../img/work/button.svg) no-repeat;
+	
+			left: 5px;
+			top: -5px;
+		}
 	}
 }
 @media (max-width:1460px) {
@@ -63,12 +96,21 @@
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-
+		}
+		&__info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
 		}
 		&__camera-info {
 			position: absolute;
 
 			right: 40px;
+		}
+		&__card-button {
+			position: absolute;
+			top: 225px;
 		}
 	}
 }
@@ -79,17 +121,20 @@
 		&__info {
 			width: 320px;
 			padding: 0 0 40px 0;
-	}
+		}
 		&__info-title {
 
 		font-size: 20px;
 		line-height: 22px;
-	}
+		}
 
 		&__picture {
 
 			width: 320px;
 			height: 250px;
-	}
+		}
+		&__card-button {
+			top: 210px;
+		}
 	}
 }

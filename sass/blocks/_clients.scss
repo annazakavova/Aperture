@@ -32,6 +32,14 @@
 		li {
 			margin: 30px;
 		}
+		
+		svg:hover {
+
+			path {
+				transition: 0.3s ease-in;
+				fill: #1959e3;
+			}
+		}
 	}
 }
 @media (max-width:850px) {

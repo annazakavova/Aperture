@@ -1,6 +1,15 @@
 .help {
 
 	padding: 113px 0 100px 0;
+	
+	&__intro {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+
+		position: relative;
+	}
 
 	&__title {
 		font-size: 40px;
@@ -11,8 +20,6 @@
 		width: 571px;
 		margin: 0 auto;
 		margin-bottom: 15px;
-
-		text-align: center;
 	}
 
 	&__subtitle {
@@ -20,12 +27,40 @@
 		line-height: 30px;
 
 		margin-bottom: 20px;
-
-		text-align: center;
 	}
 
 	&__card-button {
-		text-align: center;
+		font-size: 15px;
+	
+		color: #000000;
+
+		position: absolute;
+	
+		a {
+			padding: 10px 10px 13px 42px;
+	
+			background: #FFFFFF;
+			border-radius: 14px;
+
+			transition: 0.3s ease-in;
+	
+			&:hover {
+				background: #1959e3;
+				color: #FFFFFF;
+			}
+		}
+	
+		&:before {
+			content: "";
+	
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			background: url(../../img/work/button.svg) no-repeat;
+	
+			left: 4px;
+			top: -5px;
+		}
 	}
 }
 @media (max-width: 656px) {

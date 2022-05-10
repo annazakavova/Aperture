@@ -42,33 +42,3 @@
 		}
 	}
 }
-// BUTTON
-.card-button {
-	font-size: 15px;
-	
-		color: #000000;
-	
-		a {
-			padding: 10px 10px 13px 42px;
-	
-			background: #FFFFFF;
-			border-radius: 14px;
-	
-			&:hover {
-				background: #1959e3;
-				color: #FFFFFF;
-			}
-		}
-	
-		&:before {
-			content: "";
-	
-			position: absolute;
-			width: 32px;
-			height: 32px;
-			background: url(../../img/work/button.svg) no-repeat;
-	
-			left: 4px;
-			top: -5px;
-		}
-}
