@@ -24,6 +24,8 @@
   background: #FFFFFF;
   border-radius: 14px;
   transition: 0.3s ease-in; }
+  .nav-link-button a:hover {
+    text-decoration: none; }
   .nav-link-button:hover {
     background: #1959e3;
     color: #FFFFFF; }
@@ -371,11 +373,17 @@
 .help {
   padding: 113px 0 100px 0; }
   .help__intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .help__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    position: relative; }
+    margin-bottom: 30px; }
   .help__title {
     font-size: 40px;
     line-height: 42px;
@@ -385,12 +393,11 @@
     margin-bottom: 15px; }
   .help__subtitle {
     font-size: 24px;
-    line-height: 30px;
-    margin-bottom: 20px; }
+    line-height: 30px; }
   .help__card-button {
     font-size: 15px;
     color: #000000;
-    position: absolute; }
+    position: relative; }
     .help__card-button a {
       padding: 10px 10px 13px 42px;
       background: #FFFFFF;
@@ -405,7 +412,7 @@
       width: 32px;
       height: 32px;
       background: url(../../img/work/button.svg) no-repeat;
-      left: 4px;
+      left: 5px;
       top: -5px; }
 
 @media (max-width: 656px) {

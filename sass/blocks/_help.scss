@@ -3,12 +3,21 @@
 	padding: 113px 0 100px 0;
 	
 	&__intro {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__info {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
 
-		position: relative;
+		margin-bottom: 30px;
 	}
 
 	&__title {
@@ -25,8 +34,6 @@
 	&__subtitle {
 		font-size: 24px;
 		line-height: 30px;
-
-		margin-bottom: 20px;
 	}
 
 	&__card-button {
@@ -34,7 +41,7 @@
 	
 		color: #000000;
 
-		position: absolute;
+		position: relative;
 	
 		a {
 			padding: 10px 10px 13px 42px;
@@ -58,7 +65,7 @@
 			height: 32px;
 			background: url(../../img/work/button.svg) no-repeat;
 	
-			left: 4px;
+			left: 5px;
 			top: -5px;
 		}
 	}
